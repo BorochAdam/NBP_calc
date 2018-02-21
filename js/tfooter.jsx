@@ -7,6 +7,8 @@ export default class Tfooter extends React.Component {
             <tr>
                 <td>---</td>
                 <td>---</td>
+                <td>---</td>
+                <td>---</td>
             </tr>
             </tfoot>
         );

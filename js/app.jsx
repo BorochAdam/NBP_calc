@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Main from './main.jsx';
 
-const currencies = ['USD','EUR','GBP','CHF'];
+const currencies = ['USD','EUR','GBP','CHF', 'JPY'];
 
 class App extends React.Component {
     render() {
