@@ -7,11 +7,14 @@ export default class Trow extends React.Component {
             currencyToCountBid : '',
             currencyToCountAsk : ''
         }
-        this.newFetch(this.props.currencyToShow)
+        this.newFetch(this.props.currencyToShow, this.props.selectedDay)
     }
-
-    newFetch(element) {
-        fetch(`http://api.nbp.pl/api/exchangerates/rates/c/${element}/2016-04-04/?format=json`)
+    componentWillReceiveProps(nextProps){
+        console.log(nextProps.selectedDay)
+        this.newFetch(this.props.currencyToShow, nextProps.selectedDay)
+    }
+    newFetch(element, newDay) {
+        fetch(`http://api.nbp.pl/api/exchangerates/rates/c/${element}/${newDay}/?format=json`)
             .then(response => {
                 if (response.ok) {
                     return response.json();
@@ -31,7 +34,7 @@ export default class Trow extends React.Component {
 
     render() {
         //obliczanie ilości waluty wymienionej na złotówki
-        let amountCounted;
+        let amountCounted
 
         if (this.props.option==="buy"){
             amountCounted = Math.round(100*this.props.amount/this.state.currencyToCountBid)/100;

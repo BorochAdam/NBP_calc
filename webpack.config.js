@@ -7,7 +7,12 @@ module.exports = {
     devtool:'#eval-source-map',
     watch: true,
     module: {
+
         loaders: [
+            {
+                test: /\.css$/,
+                use: [ 'style-loader', 'css-loader' ]
+            },
             {
                 test: /\.jsx$/,
                 exclude: /node_modules/,

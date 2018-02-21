@@ -5,7 +5,14 @@ export default class Tbody extends React.Component {
     render() {
         let rows = [];
         this.props.currencies.forEach((item, index) => {
-           rows.push(<Trow option={this.props.option} amount={this.props.amount} currencyToShow={item} key={index}/>);
+           rows.push(<Trow
+                       option={this.props.option}
+                       amount={this.props.amount}
+                       currencyToShow={item}
+                       key={index}
+                       selectedDay = {this.props.selectedDay}
+                    />
+           );
         });
         return (
             <tbody>

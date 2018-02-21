@@ -3,6 +3,7 @@ import Theader from './theader.jsx';
 import Tfooter from './tfooter.jsx';
 import Tbody from './tbody.jsx';
 import ExchangeValue from './exchangeValue.jsx';
+import SelectDay from './selectDay.jsx';
 
 
 export default class Main extends React.Component {
@@ -10,7 +11,8 @@ export default class Main extends React.Component {
         super(props);
         this.state={
             amount: '',
-            option: "buy"
+            option: "buy",
+            selectedDay: this.props.todayDate.toISOString().split('T')[0]
         }
     }
 
@@ -32,22 +34,28 @@ export default class Main extends React.Component {
                 <h1>
                     Kurs względem złotego NBP
                 </h1>
+                <SelectDay
+                    changeInput={this.changeInput}
+                    selectedDay={this.state.selectedDay}
+                />
                 <ExchangeValue
                     changeInput = {this.changeInput}
                     amount={this.state.amount}
                     option={this.state.option}
                     radioChange = {this.radioChange}
                 />
+                <p>Stan na: {this.state.selectedDay}</p>
                 <table>
                     <Theader option={this.state.option}/>
                     <Tbody
                         option={this.state.option}
                         amount={this.state.amount}
                         currencies={this.props.currencies}
+                        selectedDay = {this.state.selectedDay}
                     />
                     <Tfooter/>
                 </table>
-                <p>data {Date()}</p>
+
             </div>
 
         );
