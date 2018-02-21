@@ -47,6 +47,7 @@ export default class Main extends React.Component {
                     />
                     <Tfooter/>
                 </table>
+                <p>data {Date()}</p>
             </div>
 
         );

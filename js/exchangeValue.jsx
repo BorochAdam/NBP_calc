@@ -5,9 +5,9 @@ export default class ExchangeValue extends React.Component {
     render() {
         return (
             <div>
-                <p>Wymieniarka</p>
                 <form>
-
+                    <fieldset>
+                        <legend>Wymieniarka</legend>
                     <input type="radio"
                            name="radio"
                            value="buy"
@@ -34,6 +34,7 @@ export default class ExchangeValue extends React.Component {
                         value={this.props.amount}
                         placeholder="Tu wpisz ilość złotych"
                     />
+                    </fieldset>
                 </form>
             </div>
         );
