@@ -18,8 +18,11 @@ export default class Main extends React.Component {
         }
     }
 
-    changeFormElementEggs = (event)=>{
-        console.log('test');
+    changeEggs = (event)=>{
+        this.setState({
+            currUnit : event.target.options[event.target.selectedIndex].text,
+            currToChangeValue : event.target.value*this.state.currToChangeValue
+        })
     }
 
     changeFormElement = (event)=>{
@@ -67,7 +70,7 @@ export default class Main extends React.Component {
                     tradeCurrencies={this.props.tradeCurrencies}
                     changeFormElement={this.changeFormElement}
                     currToChange={this.state.currToChange}
-                    changeFormElementEggs={this.changeFormElementEggs}
+                    changeEggs={this.changeEggs}
                 />
                 <ExchangeValue
                     changeInput = {this.changeInput}

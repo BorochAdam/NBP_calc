@@ -16,14 +16,18 @@ import React from 'react';
             )
         });
         if (this.props.currToChange==="jajka"){
-           eggAmount=<select id="eggsNumber"
-                 onChange={this.props.changeFormElementEggs}>
-               <option value="kopa">kopa</option>
-               <option value="mendel">mendel</option>
-               <option value="mendel chłopski">mendel chłopski</option>
-               <option value="tuzin">tuzin</option>
-               <option value="gros">gros</option>
-           </select>;
+           eggAmount=
+               <select
+                   id="eggsNumber"
+                   onChange={this.props.changeEggs}>
+               >
+                   <option value={1}>sztuka</option>
+                   <option value={60}>kopa</option>
+                   <option value={15}>mendel</option>
+                   <option value={16}>mendel chłopski</option>
+                   <option value={12}>tuzin</option>
+                   <option value={144}>gros</option>
+                </select>;
         }
         return (
             <div>
