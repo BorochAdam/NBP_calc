@@ -29,6 +29,10 @@ import React from 'react';
                    <option value={144}>gros</option>
                 </select>;
         }
+            //SPRAWDZENIE DATY, czy pasuje do zadanego zakresu
+            this.props.checkDate();
+
+
         return (
             <div>
                 <form>
@@ -41,8 +45,7 @@ import React from 'react';
                     value={this.props.selectedDay}
                     placeholder="Tu wpisz datę"
                 />
-                        <p>data musi być wyższa od 2002-01-02 i maksymalnie sięgać {this.props.selectedDay} </p>
-
+                        <br/>
                         <select id="number"
                                 onChange={this.props.changeFormElement}>
                             {currOptions}

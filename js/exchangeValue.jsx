@@ -5,7 +5,9 @@ export default class ExchangeValue extends React.Component {
     render() {
         return (
             <div>
-                <form>
+                <form  onSubmit={(event) => {
+                    event.preventDefault();
+                }} >
                     <fieldset>
                         <legend>Wymieniarka</legend>
                     <input type="radio"

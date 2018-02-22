@@ -30,6 +30,22 @@ export default class Main extends React.Component {
         })
     }
 
+    checkDate = () =>{
+        if (this.state.selectedDay > this.props.todayDate.toISOString().split('T')[0]){
+            alert('data nie może być dalsza niż dzisiejsza!');
+            this.setState({
+        selectedDay : this.props.todayDate.toISOString().split('T')[0]
+                          })
+        }
+        if (this.state.selectedDay < "2002-01-02"){
+            alert('data nie może być wcześniejsza niż 2002-01-02!');
+
+            this.setState({
+                selectedDay : "2002-01-02"
+            })
+        }
+    }
+
     changeFormElement = (event)=>{
         //podstawienie wartości valuePln z obiektu tradeCurrencies jako wartość do kursu
         let newValuePln = undefined;
@@ -65,7 +81,7 @@ export default class Main extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
                 <h1>
                     Kurs względem złotego NBP
                 </h1>
@@ -76,6 +92,8 @@ export default class Main extends React.Component {
                     changeFormElement={this.changeFormElement}
                     currToChange={this.state.currToChange}
                     changeEggs={this.changeEggs}
+                    todayDate={this.props.todayDate}
+                    checkDate={this.checkDate}
                 />
                 <ExchangeValue
                     changeInput = {this.changeInput}

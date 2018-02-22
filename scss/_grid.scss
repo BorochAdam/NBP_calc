@@ -1,0 +1,36 @@
+$gap : 10px;//przerwa między kolumnami
+$columns : 12;//liczba kolumn
+$breakpoint : 768px;
+
+
+//GRID
+.container{
+  padding-left: $gap;
+  padding-right: $gap;
+
+  .row{
+    &:after{
+      content: '';
+      display: block;
+      clear: both;
+      margin-left: -$gap;
+      margin-right: -$gap;
+    }
+    @for $i from 1 through $columns{
+      .col-#{$i}-#{$columns}{
+        box-sizing: border-box;
+
+        padding-left: $gap;
+        padding-right: $gap;
+        margin-bottom: 2*$gap;
+
+        @media (min-width: $breakpoint){
+          width: (100%/$columns*$i);
+          float: left;
+        }
+
+
+      }
+    }
+  }
+}
