@@ -10,7 +10,6 @@ export default class Trow extends React.Component {
         this.newFetch(this.props.currencyToShow, this.props.selectedDay)
     }
     componentWillReceiveProps(nextProps){
-        console.log(nextProps.selectedDay)
         this.newFetch(this.props.currencyToShow, nextProps.selectedDay)
     }
     newFetch(element, newDay) {
@@ -34,13 +33,13 @@ export default class Trow extends React.Component {
 
     render() {
         //obliczanie ilości waluty wymienionej na złotówki
-        let amountCounted
+        let amountCounted;
 
         if (this.props.option==="buy"){
-            amountCounted = Math.round(100*this.props.amount/this.state.currencyToCountBid)/100;
+            amountCounted = Math.round(100*this.props.amount*this.props.currToChangeValue/this.state.currencyToCountBid)/100;
         }
         else if (this.props.option==="sell"){
-            amountCounted = Math.round(100*this.props.amount/this.state.currencyToCountAsk)/100;
+            amountCounted = Math.round(100*this.props.amount*this.props.currToChangeValue/this.state.currencyToCountAsk)/100;
         }
 
 

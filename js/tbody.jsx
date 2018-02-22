@@ -6,6 +6,7 @@ export default class Tbody extends React.Component {
         let rows = [];
         this.props.currencies.forEach((item, index) => {
            rows.push(<Trow
+                       currToChangeValue={this.props.currToChangeValue}
                        option={this.props.option}
                        amount={this.props.amount}
                        currencyToShow={item}
