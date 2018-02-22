@@ -17,7 +17,12 @@ export default class Main extends React.Component {
             currUnit: " "
         }
     }
-
+    checkNumber = () => {
+       let positiveAmount = prompt('wartość nie może być mniejsza od zera :(\nwprowadź dodatnią wartość');
+        this.setState({
+            amount: positiveAmount
+        });
+    }
     changeEggs = (event)=>{
         this.setState({
             currUnit : event.target.options[event.target.selectedIndex].text,
@@ -84,6 +89,7 @@ export default class Main extends React.Component {
                 <table>
                     <Theader option={this.state.option}/>
                     <Tbody
+                        checkNumber = {this.checkNumber}
                         currToChangeValue = {this.state.currToChangeValue}
                         option={this.state.option}
                         amount={this.state.amount}

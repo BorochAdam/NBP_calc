@@ -34,12 +34,11 @@ export default class Trow extends React.Component {
     render() {
         //obliczanie ilości waluty wymienionej na złotówki
         let amountCounted;
-
         if (this.props.option==="buy"){
-            amountCounted = Math.round(100*this.props.amount*this.props.currToChangeValue/this.state.currencyToCountBid)/100;
+            amountCounted = this.props.amount<0 ? 0 : Math.round(100*this.props.amount*this.props.currToChangeValue/this.state.currencyToCountBid)/100;
         }
         else if (this.props.option==="sell"){
-            amountCounted = Math.round(100*this.props.amount*this.props.currToChangeValue/this.state.currencyToCountAsk)/100;
+            amountCounted = this.props.amount<0 ? 0 : Math.round(100*this.props.amount*this.props.currToChangeValue/this.state.currencyToCountAsk)/100;
         }
 
 

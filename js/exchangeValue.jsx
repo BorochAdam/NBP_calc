@@ -14,7 +14,7 @@ export default class ExchangeValue extends React.Component {
                            checked={this.props.option==="buy"}
                            onChange={this.props.radioChange}
                     />
-                        Chcę kupić {this.props.amount!=='' ? "za "+this.props.amount+" "+this.props.currUnit+" - "+this.props.currToChange : ""}
+                        Chcę sprzedać {this.props.amount!=='' ? "za "+this.props.amount+" "+this.props.currUnit+" - "+this.props.currToChange : ""}
                     <br/>
 
                     <input
@@ -24,7 +24,7 @@ export default class ExchangeValue extends React.Component {
                         checked={this.props.option==="sell"}
                         onChange={this.props.radioChange}
                     />
-                        Chcę sprzedać {this.props.amount!=='' ? "za "+this.props.amount+" "+this.props.currUnit+" - "+this.props.currToChange : ""}
+                        Chcę kupić {this.props.amount!=='' ? "za "+this.props.amount+" "+this.props.currUnit+" - "+this.props.currToChange : ""}
                     <br/>
 
                     <input
