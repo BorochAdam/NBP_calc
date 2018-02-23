@@ -5,9 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/js/exchangeValue.jsx" afterPath="$PROJECT_DIR$/js/exchangeValue.jsx" />
       <change beforePath="$PROJECT_DIR$/js/header.jsx" afterPath="$PROJECT_DIR$/js/header.jsx" />
       <change beforePath="$PROJECT_DIR$/js/main.jsx" afterPath="$PROJECT_DIR$/js/main.jsx" />
       <change beforePath="$PROJECT_DIR$/js/out.js" afterPath="$PROJECT_DIR$/js/out.js" />
+      <change beforePath="$PROJECT_DIR$/js/theader.jsx" afterPath="$PROJECT_DIR$/js/theader.jsx" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
@@ -26,8 +28,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="96">
+              <caret line="4" column="76" lean-forward="false" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -36,8 +38,8 @@
       <file leaf-file-name="main.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="872">
-              <caret line="128" column="10" lean-forward="true" selection-start-line="128" selection-start-column="10" selection-end-line="128" selection-end-column="10" />
+            <state relative-caret-position="-16">
+              <caret line="96" column="17" lean-forward="true" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -48,18 +50,18 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="141" column="0" lean-forward="true" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="270" column="0" lean-forward="true" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="selectDay.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/selectDay.jsx">
+      <file leaf-file-name="header.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/header.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2">
-              <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+            <state relative-caret-position="-312">
+              <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -69,36 +71,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cons</find>
-      <find>złotych</find>
-      <find>newva</find>
-      <find>changeEggs</find>
-      <find>amou</find>
-      <find>changeinp</find>
-      <find>changein</find>
-      <find>*</find>
-      <find>&lt;</find>
-      <find>if</find>
-      <find>checkNumber</find>
-      <find>tbod</find>
-      <find>kupić</find>
-      <find>kup</find>
-      <find>input</find>
-      <find>consol</find>
-      <find>opac</find>
-      <find>kurs</find>
-      <find>form</find>
       <find>tu w</find>
       <find>border</find>
-      <find>vh</find>
       <find>padding</find>
       <find>padding-top</find>
       <find>stan</find>
       <find>tra</find>
-      <find>url</find>
       <find>conta</find>
       <find>padd</find>
       <find>hre</find>
+      <find>radio</find>
+      <find>hov</find>
+      <find>jedn</find>
+      <find>input</find>
+      <find>.conta</find>
+      <find>vw</find>
+      <find>vh</find>
+      <find>vmin</find>
+      <find>vmax</find>
+      <find>view</find>
+      <find>font-s</find>
+      <find>h1</find>
+      <find>font-siz</find>
+      <find>block</find>
+      <find>flex</find>
+      <find>displ</find>
+      <find>header</find>
+      <find>colum</find>
+      <find>url</find>
+      <find>a</find>
+      <find>500</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,17 +114,17 @@
         <option value="$PROJECT_DIR$/js/searchDay.jsx" />
         <option value="$PROJECT_DIR$/js/tfooter.jsx" />
         <option value="$PROJECT_DIR$/../../react tydzien 5/POZ_FER_S_08_REACT_React/1_Zadania/Dzien_3/2_State_podsumowanie/webpack.config.js" />
-        <option value="$PROJECT_DIR$/js/theader.jsx" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/js/app.jsx" />
         <option value="$PROJECT_DIR$/js/trow.jsx" />
         <option value="$PROJECT_DIR$/js/tbody.jsx" />
         <option value="$PROJECT_DIR$/js/selectDay.jsx" />
-        <option value="$PROJECT_DIR$/js/exchangeValue.jsx" />
         <option value="$PROJECT_DIR$/scss/main.scss" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.jsx" />
         <option value="$PROJECT_DIR$/js/header.jsx" />
+        <option value="$PROJECT_DIR$/js/theader.jsx" />
+        <option value="$PROJECT_DIR$/js/exchangeValue.jsx" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
@@ -222,12 +224,12 @@
       <workItem from="1519287518659" duration="20030000" />
       <workItem from="1519310946480" duration="79000" />
       <workItem from="1519311185087" duration="2741000" />
-      <workItem from="1519374236975" duration="8455000" />
+      <workItem from="1519374236975" duration="13878000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65794000" />
+    <option name="totallyTimeSpent" value="71217000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -501,13 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/theader.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="74" lean-forward="false" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../react workshop/POZ_FER_S_08_REACT_React_Workshop/1_Fetch/js/zadanieDodatkowe.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1144">
@@ -574,52 +569,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/selectDay.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="48" column="42" lean-forward="false" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/exchangeValue.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="36" column="59" lean-forward="false" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
+        <state relative-caret-position="272">
+          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/theader.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="81" lean-forward="true" selection-start-line="10" selection-start-column="81" selection-end-line="10" selection-end-column="81" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="96">
+          <caret line="4" column="76" lean-forward="false" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/header.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-312">
+          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="872">
-          <caret line="128" column="10" lean-forward="true" selection-start-line="128" selection-start-column="10" selection-end-line="128" selection-end-column="10" />
+        <state relative-caret-position="-16">
+          <caret line="96" column="17" lean-forward="true" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/header.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/selectDay.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="141" column="0" lean-forward="true" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+        <state relative-caret-position="272">
+          <caret line="270" column="0" lean-forward="true" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
           <folding />
         </state>
       </provider>
