@@ -22,7 +22,6 @@ body{
 .headerContent{
     display: flex;
     flex-direction: row;
-    padding-top: 40px;
 
 }
 .container{
@@ -62,8 +61,8 @@ body{
 }
 
 .header a:hover{
-color: white;
-background-color: #006461;
+    color: white;
+    background-color: #006461;
 }
 
 h1{
@@ -88,7 +87,7 @@ h2 > span{
 .rightSection{
     width: 40vw;
     background-image: url('../images/image_small.jpg');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     padding: 5px;
     background-position: center;
@@ -122,4 +121,21 @@ table{
 td, th{
     border: 1px solid #969696;
     padding: 3px 10px;
+}
+
+
+.author{
+    font-size: 10px;
+    opacity: 0.3;
+    display: flex;
+    justify-content: flex-end;
+}
+blockquote{
+    width: 300px;
+}
+figcaption{
+    font-style: italic;
+}
+form{
+
 }

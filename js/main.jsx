@@ -122,6 +122,7 @@ export default class Main extends React.Component {
                         </table>
                     </div>
                 </div>
+                <span className="author">Adam Boroch 2018</span>
             </div>
 
 
