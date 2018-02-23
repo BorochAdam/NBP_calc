@@ -4,6 +4,7 @@ import Tfooter from './tfooter.jsx';
 import Tbody from './tbody.jsx';
 import ExchangeValue from './exchangeValue.jsx';
 import SelectDay from './selectDay.jsx';
+import Header from './header.jsx';
 
 export default class Main extends React.Component {
     constructor(props){
@@ -81,43 +82,48 @@ export default class Main extends React.Component {
 
     render() {
         return (
-            <div className="container">
-                <h1>
-                    Kurs względem złotego NBP
-                </h1>
-                <SelectDay
-                    changeInput={this.changeInput}
-                    selectedDay={this.state.selectedDay}
-                    tradeCurrencies={this.props.tradeCurrencies}
-                    changeFormElement={this.changeFormElement}
-                    currToChange={this.state.currToChange}
-                    changeEggs={this.changeEggs}
-                    todayDate={this.props.todayDate}
-                    checkDate={this.checkDate}
-                />
-                <ExchangeValue
-                    changeInput = {this.changeInput}
-                    amount={this.state.amount}
-                    option={this.state.option}
-                    radioChange = {this.radioChange}
-                    currToChange = {this.state.currToChange}
-                    currUnit={this.state.currUnit}
-                />
-                <p>Stan na: {this.state.selectedDay}</p>
-                <table>
-                    <Theader option={this.state.option}/>
-                    <Tbody
-                        checkNumber = {this.checkNumber}
-                        currToChangeValue = {this.state.currToChangeValue}
-                        option={this.state.option}
-                        amount={this.state.amount}
-                        currencies={this.props.currencies}
-                        selectedDay = {this.state.selectedDay}
-                    />
-                    <Tfooter/>
-                </table>
-
+            <div>
+                <Header/>
+                <div className="container">
+                    <h1>
+                        NBP calc
+                    </h1>
+                    <div className="internalContainer">
+                        <SelectDay
+                            changeInput={this.changeInput}
+                            selectedDay={this.state.selectedDay}
+                            tradeCurrencies={this.props.tradeCurrencies}
+                            changeFormElement={this.changeFormElement}
+                            currToChange={this.state.currToChange}
+                            changeEggs={this.changeEggs}
+                            todayDate={this.props.todayDate}
+                            checkDate={this.checkDate}
+                        />
+                        <ExchangeValue
+                            changeInput = {this.changeInput}
+                            amount={this.state.amount}
+                            option={this.state.option}
+                            radioChange = {this.radioChange}
+                            currToChange = {this.state.currToChange}
+                            currUnit={this.state.currUnit}
+                        />
+                        <p className="customDate">Stan na:&nbsp; <span>{this.state.selectedDay}</span></p>
+                        <table>
+                            <Theader option={this.state.option}/>
+                            <Tbody
+                                checkNumber = {this.checkNumber}
+                                currToChangeValue = {this.state.currToChangeValue}
+                                option={this.state.option}
+                                amount={this.state.amount}
+                                currencies={this.props.currencies}
+                                selectedDay = {this.state.selectedDay}
+                            />
+                            <Tfooter/>
+                        </table>
+                    </div>
+                </div>
             </div>
+
 
         );
     }
